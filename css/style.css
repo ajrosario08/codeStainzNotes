@@ -9,7 +9,6 @@ html {
 }
 
 #ribbon {
-
   overflow: hidden;
   height: 5em;
   width: 100%;
@@ -48,8 +47,88 @@ html {
 
 .addNote i {
   position: relative;
+  top: 25px;
+  left: 33px;
   font-size: 2em;
   color: black;
+}
+
+#noteForm {
+  display: none;
+  background-color: #555859;
+  padding-left: 8em;
+  padding-right: 8em;
+  padding-top: 1.5em;
+  height: 120px;
+}
+
+#noteForm label {
+  font-size: 1.5em;
+}
+
+
+#noteForm input {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5em;
+  padding-left: 10px;
+  width: 478px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+#noteForm hr {
+  margin: 10px 0;
+}
+
+#noteForm .noteButton:hover {
+  background-color: black;
+  color: white;
+}
+
+#noteForm .cancel {
+  padding-top: .4em;
+  font-size: 1.3em;
+  text-shadow: 1px 1px grey;
+  text-align: center;
+  float: left;
+  width: 75px;
+  height: 35px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: orange;
+  color: black;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#noteForm .clearAll {
+  padding-top: .4em;
+  font-size: 1.3em;
+  text-shadow: 1px 1px grey;
+  text-align: center;
+  float: left;
+  width: 100px;
+  height: 35px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: red;
+  color: black;
+  margin-left: 50px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#noteForm .enter {
+  padding-top: .4em;
+  font-size: 1.3em;
+  text-shadow: 1px 1px grey;
+  text-align: center;
+  float: right;
+  width: 75px;
+  height: 35px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: green;
+  color: black;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 
