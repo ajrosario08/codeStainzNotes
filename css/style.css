@@ -8,19 +8,16 @@ html {
     min-height: 100%;
 }
 
-body {
-  background-color: #d6f1fc;
-}
+#ribbon {
 
-header {
   overflow: hidden;
   height: 5em;
   width: 100%;
-  background-color: #1F1F1F;
+  background-color: black;
   box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.5);;
 }
 
-header h1 {
+#ribbon h1 {
   font-style: italic;
   font-size: 3em;
   color: #0298e2;
@@ -29,7 +26,7 @@ header h1 {
   padding-top: .3em;
 }
 
-header h1 span {
+#ribbon h1 span {
   color: Gray;
 }
 
@@ -58,7 +55,7 @@ header h1 span {
 
 main::before {
   position: fixed;
-  top: 0;
+  top: 5em;
   left: 7em;
   z-index: -1;
   content: "";
@@ -71,17 +68,13 @@ main::before {
 
 main {
   font-family: 'Indie Flower', cursive;
-  padding-left: 130px;
+  padding-left: 150px;
+  line-height: 2em;
   padding-top: 30px;
 }
 
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-footer p {
-  padding-left: 130px;
-  padding-bottom: 2px;
+#noteList li {
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 1px;
 }
