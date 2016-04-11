@@ -29,7 +29,7 @@ html {
   color: Gray;
 }
 
-.addNote {
+#addNote {
   border: none;
   position: relative;
   margin-right: 60px;
@@ -40,12 +40,12 @@ html {
 }
 
 
-.addNote:hover {
+#addNote:hover {
   background-color: #555859;
 
 }
 
-.addNote i {
+#addNote i {
   position: relative;
   top: 25px;
   left: 33px;
@@ -55,7 +55,7 @@ html {
 
 #noteForm {
   display: none;
-  background-color: #555859;
+  background-color: rgba(0, 0, 0, 0.5);;
   padding-left: 8em;
   padding-right: 8em;
   padding-top: 1.5em;
