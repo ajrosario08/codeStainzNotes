@@ -161,6 +161,7 @@ main {
   letter-spacing: 1px;
   list-style-type: none;
   position: relative;
+
 }
 
 #noteList div.noteItem  {
@@ -170,7 +171,8 @@ main {
 }
 
 li:hover {
-  background-color: rgba(205, 92, 92, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   padding: 10px;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 }
