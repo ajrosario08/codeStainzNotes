@@ -1,4 +1,5 @@
-// ================= Dom Elements ======================
+// ================== Dom Elements =====================
+
 var addNote = document.getElementById('addNote');
 var noteForm = document.getElementById('noteForm');
 var noteList = document.getElementById('noteList');
@@ -7,7 +8,7 @@ var cancelButton = document.getElementById('cancel');
 var enterButton = document.getElementById('enter');
 var clearAllButton = document.getElementById('clearAll');
 
-// ==================== Events =========================
+// ================== Event Listeners ===================
 
 document.onload = loadNotes();
 
@@ -19,8 +20,7 @@ enterButton.addEventListener('click', addNewNote, false);
 
 clearAllButton.addEventListener('click', clearAllNotes, false);
 
-
-// ============== Function Declarations =================
+// =============== Function Declarations ================
 
 function toggleNoteForm() {
   if (noteForm.style.display == "none") {
@@ -58,11 +58,9 @@ function addNewNote() {
   noteForm.style.display = "none";
   noteString.value = '';
   noteTitle.value = '';
-
 }
 
 function generateId() {
-
   if (localStorage.id) {
     var newId = parseInt(localStorage.id, 10) + 1;
     localStorage.id = newId;
@@ -71,13 +69,11 @@ function generateId() {
       localStorage.id = '1';
       return localStorage.id;
   }
-
 }
 
 function clearAllNotes() {
   noteList.innerHTML = '';
   localStorage.clear();
-  localStorage.id = '1';
   toggleNoteForm();
 }
 
